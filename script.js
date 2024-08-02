@@ -3,14 +3,28 @@ function countdownTimer() {
     const now = new Date().getTime();
     const distance = targetDate - now;
 
-    // Calculate total seconds with milliseconds precision
-    const totalSeconds = (distance / 1000).toFixed(2); // Rounded to 2 decimal places
-
     if (distance > 0) {
+        // Calculate total seconds
+        const totalSeconds = (distance / 1000).toFixed(2);
         document.getElementById("totalSeconds").innerText = totalSeconds;
+
+        // Detailed countdown
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = days;
+        document.getElementById("hours").innerText = hours;
+        document.getElementById("minutes").innerText = minutes;
+        document.getElementById("seconds").innerText = seconds;
     } else {
         clearInterval(interval);
         document.getElementById("totalSeconds").innerText = "0.00";
+        document.getElementById("days").innerText = "0";
+        document.getElementById("hours").innerText = "0";
+        document.getElementById("minutes").innerText = "0";
+        document.getElementById("seconds").innerText = "0";
     }
 }
 
