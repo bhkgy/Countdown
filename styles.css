@@ -6,10 +6,6 @@ body {
     padding: 0;
 }
 
-h1 {
-    display: none;
-}
-
 #countdown {
     font-size: 2em;
     margin-top: 20%;
