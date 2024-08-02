@@ -6,6 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
+    overflow: hidden; /* スクロールバーを非表示に */
 }
 
 #countdownContainer {
@@ -16,10 +17,13 @@ body {
     height: 100%;
     width: 100%;
     text-align: center;
+    transform: scale(4); /* 400%拡大 */
+    transform-origin: 0 0; /* 拡大の基準点を左上に設定 */
+    font-size: 2.5em; /* サイズを調整 */
 }
 
 #secondsDisplay, #detailedCountdown {
-    font-size: 10vw; /* 画面の幅に対してサイズを調整 */
+    font-size: 2.5em; /* サイズを調整 */
     margin: 0;
 }
 
