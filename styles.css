@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
 }
@@ -14,14 +15,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
+}
+
+#countdownContent {
     text-align: center;
 }
 
 #secondsDisplay, #detailedCountdown {
-    font-size: 10em; /* サイズを大きくする */
+    font-size: 2em; /* サイズを調整 */
     margin: 0;
 }
 
 #detailedCountdown {
-    margin-top: 20px; /* 上部と下部の間隔を調整 */
+    margin-top: 10px; /* 上部と下部の間隔を調整 */
 }
