@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -16,14 +15,11 @@ body {
     align-items: center;
     height: 100%;
     width: 100%;
-}
-
-#countdownContent {
     text-align: center;
 }
 
 #secondsDisplay, #detailedCountdown {
-    font-size: 2em; /* サイズを調整 */
+    font-size: 10vw; /* 画面の幅に対してサイズを調整 */
     margin: 0;
 }
 
