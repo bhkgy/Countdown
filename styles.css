@@ -17,12 +17,11 @@ body {
     text-align: center;
 }
 
-#secondsDisplay {
-    font-size: 10em;
+#secondsDisplay, #detailedCountdown {
+    font-size: 10em; /* サイズを大きくする */
     margin: 0;
 }
 
 #detailedCountdown {
-    font-size: 2em;
-    margin-top: 20px;
+    margin-top: 20px; /* 上部と下部の間隔を調整 */
 }
