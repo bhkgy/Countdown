@@ -3,6 +3,10 @@ function countdownTimer() {
     const now = new Date().getTime();
     const distance = targetDate - now;
 
+    console.log(`Target date: ${targetDate}`);
+    console.log(`Current date: ${now}`);
+    console.log(`Distance: ${distance}`);
+
     if (distance > 0) {
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
