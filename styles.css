@@ -4,9 +4,20 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 #countdown {
-    font-size: 2em;
-    margin-top: 20%;
+    font-size: 10em; /* サイズを大きくする */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
 }
